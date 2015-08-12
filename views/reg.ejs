@@ -1,0 +1,25 @@
+<%- include header%>
+
+<div class="am-g">
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+        <form action="/reg" method="post" enctype='application/x-www-form-urlencoded'>
+            <label for="name" style="width: 80px">用户名:</label>
+            <input type="text" name="name"/>
+            <br/>
+            <label for="email" style="width: 80px">邮箱:</label>
+            <input type="text" name="email"/>
+            <br/>
+            <label for="password" style="width: 80px">密码:</label>
+            <input type="password" name="password"/>
+            <br/>
+            <label for="password-repeat" style="width: 80px">确认密码:</label>
+            <input type="password" name="password-repeat"/>
+            <br/>
+            <br/>
+            <div class="am-cf">
+                <input type="submit" value="注册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include footer %>
